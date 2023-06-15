@@ -1,0 +1,259 @@
+/* Add your custom styles here */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family:cursive;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */
+    grid-gap: 20px;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two projects in a row */
+    grid-gap: 20px;
+}
+
+/* .project {
+    Styles for individual projects
+} */
+
+
+section {
+    margin-bottom: 100px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+
+.logo{
+    height: 20px;
+    width: 20px;
+}
+
+.logoText{
+    font-size: 20px;
+}
+
+.about{
+    font-weight: 500;
+    text-decoration: double;
+    border-color: rgb(254, 45, 86);
+    border-width: 2.5px;
+    border: 2px solid #0a1acbe4;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 5px;
+  max-width: 500px;
+  background-color: #d20ecc18;
+  box-shadow: 10px 8px 20px rgba(70, 9, 9, 0.779);
+}
+
+.details-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #333333;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+p {
+  color: #555555;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+#about-me {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666;
+    max-width: 500px;
+  }
+
+  @keyframes slideInLeft{
+    from{
+      transform: translateX(-300px);
+    }
+
+    to{
+      transform: translateX(0);
+    }
+  }
+ 
+  @keyframes slideInLeft{
+    from{
+      transform: translateX(-300px);
+    }
+
+    to{
+      transform: translateX(0);
+    }
+  }
+
+.animation1{
+  animation: slideInLeft 1s ease-in;
+  animation-delay: 1s;
+}
+
+
+.animation2{
+  animation: slideInLeft 2s ease-out;
+  animation-delay: 1s;
+}
+
+.bounce {
+  animation: bounce 0.5s 4;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.08);
+  }
+}
+
+.spin {
+  animation: spin 2s 1 linear;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate--short_delay{
+  animation-delay: 2s;
+}
+
+.animate--slight_delay{
+  animation-delay: 3s;
+}
+
+.parallax-container {
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.parallax-layer {
+  position: relative;
+  height: 100vh;
+  transform-style: preserve-3d;
+}
+
+.parallax-layer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-size: cover;
+  transform: translateZ(-1px) scale(2);
+}
+
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.animate-on-scroll.active {
+  opacity: 1;
+  transform: translateY(0);
+  animation: fadeIn 2s forwards;
+}
